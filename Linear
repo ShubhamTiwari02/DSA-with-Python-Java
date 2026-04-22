@@ -1,0 +1,13 @@
+item = [32,34,4,55,6,77,87,89]
+
+target = 55
+counter = 0
+for i in range(len(item)):
+    if target == item[i]:
+        counter += i
+        break
+
+if target != item[i]:
+    print("There is no element in item")
+else:
+    print(counter)   
