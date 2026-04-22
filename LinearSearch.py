@@ -10,4 +10,4 @@ for i in range(len(item)):
 if target != item[i]:
     print("There is no element in item")
 else:
-    print(counter)   
+    print(counter)    
