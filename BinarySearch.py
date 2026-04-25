@@ -1,14 +1,16 @@
 #Binary Search:-->
-data = [4,6,32,34,55,56,66,77,77,87,88,89,99,111,222]
+data = list(map(int, input("Enter your Elements :").split())) #ex. - 4 54 32 34 55 56 66 77 22 44 11 88  
 
-# item = 66 , beg = 1 , end = 15
-beg = 0 
-end = 14 
-item = 77
+item = int(input("What is to be searched: "))
+beg = 0
+end = len(data) - 1
 counter = 0
 mid = int((beg+end)/2)
 
 for i in range(len(data)):
+    if data != sorted:
+        data.sort()
+
     if item < data[mid]:
         end = mid - 1
         mid = int((beg+end)/2)
@@ -21,4 +23,3 @@ if data[mid] == item:
     print("This is our item location in the data:-",mid)
 else:
     print("Null")
-
